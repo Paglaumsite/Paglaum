@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paglaum | Fiches personnages</title>
+  <link rel="stylesheet" href="stylefichesperso.css" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="../accueil.html">📜 Paglaum</a></div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../accueil.html">Accueil</a></li>
+        <li class="dropdown">
+          Chapitres ▾
+          <ul class="dropdown-menu">
+            <li><a href="../chapitres/chapitre1.html">Chapitre 1</a></li>
+            <li><a href="../chapitres/chapitre2.html">Chapitre 2</a></li>
+            <li><a href="#">Chapitre 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          Annexes ▾
+          <ul class="dropdown-menu">
+            <li><a href="cartes.html">Carte du monde</a></li>
+            <li><a href="fiches-personnages.html">Fiches personnages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fiches-main">
+    <section class="fiche">
+      <h2>Max</h2>
+      <div class="fiche-contenu">
+        <img src="../media/img/logotest.jpg" alt="Portrait de Max" class="fiche-image" />
+        <div class="fiche-texte">
+          <p><strong>Nom :</strong> Dubois</p>
+          <p><strong>Prénom :</strong> Max</p>
+          <p><strong>Âge :</strong> 18 ans</p>
+          <p><strong>Description physique :</strong> Grand, cheveux châtains, yeux verts</p>
+          <p><strong>Attitude et comportement :</strong> Curieux, impulsif, loyal</p>
+          <p><strong>Attributs :</strong> Médaillon ancien, sens de l'orientation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fiche">
+        <h2>Max</h2>
+        <div class="fiche-contenu">
+          <img src="images/max.jpg" alt="Portrait de Max" class="fiche-image" />
+          <div class="fiche-texte">
+            <p><strong>Nom :</strong> Dubois</p>
+            <p><strong>Prénom :</strong> Max</p>
+            <p><strong>Âge :</strong> 18 ans</p>
+            <p><strong>Description physique :</strong> Grand, cheveux châtains, yeux verts</p>
+            <p><strong>Attitude et comportement :</strong> Curieux, impulsif, loyal</p>
+            <p><strong>Attributs :</strong> Médaillon ancien, sens de l'orientation</p>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>📧 Contact : paglaummail@gmail.com</p>
+      <p>© 2025 - Tous droits réservés à M. Martin Debacker</p>
+    </div>
+    <button class="toggle-theme" onclick="toggleTheme()">Mode nuit</button>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
