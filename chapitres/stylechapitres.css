@@ -330,6 +330,23 @@ footer .toggle-theme {
   }
 }
 
+@media (max-width: 768px) {
+  .chapitre-container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  header {
+    padding: 0.3rem 0.8rem;
+  }
+
+  footer {
+    padding: 0.5rem 0.8rem;
+    min-height: 50px;
+  }
+}
+
+
 /* ========== Styles spécifiques au Chapitre ========== */
 
 .chapitre-container {
