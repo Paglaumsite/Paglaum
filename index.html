@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paglaum | Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="accueil.html">📜 Paglaum</a></div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="">Accueil</a></li>
+        <li class="dropdown">
+          Chapitres ▾
+          <ul class="dropdown-menu">
+            <li><a href="chapitres\chapitre1.html">Chapitre 1</a></li>
+            <li><a href="chapitres\chapitre2.html">Chapitre 2</a></li>
+            <li><a href="#">Chapitre 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            Annexes ▾
+            <ul class="dropdown-menu">
+              <li><a href="annexes/cartes.html">Carte du monde</a></li>
+              <li><a href="annexes/fichespersonnages.html">Fiches personnages</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Entrez dans un univers de découvertes et d'aventures</h1>
+      <p>
+        Max vient d'avoir 18 ans. Toute sa vie, il a entendu parler des légendes du continent. Demain, avec son meilleur ami John, il compte bien aller vérifier si les légendes ne cachent rien d'autre que des hsitoires.
+        <br><br>
+        Partez à l'aventure avec lui et découvrez les secrets que renferme Paglaum, faites des rencontres, et profitez du paysage. Attention cependant, tout n'est pas toujours aussi rose qu'il le semble.
+        <br><br>
+      </p>
+      <a href="chapitres\chapitre1.html" style="color: black;">
+        <p style="text-align: center; font-size: larger;">
+        En avant pour le grand voyage !
+        </p>
+      </a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <p>📧 Contact : paglaummail@gmail.com</p>
+      <p>© 2025 - Tous droits réservés à M. Martin Debacker</p>
+    </div>
+    <button class="toggle-theme" onclick="toggleTheme()">Mode nuit</button>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
