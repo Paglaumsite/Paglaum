@@ -4,12 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paglaum | Accueil</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html">📜 Paglaum</a></div>
+    <div class="logo">
+      <img src="media/img/Couverture-Paglaum.png" class="logo-cover">
+      <a href="index.html">Paglaum</a>
+    </div>
+    
     <button class="hamburger" onclick="toggleMenu()">☰</button>
     <nav>
       <ul class="nav-links">
@@ -20,6 +28,13 @@
             <li><a href="chapitres\chapitre1.html">Chapitre 1</a></li>
             <li><a href="chapitres\chapitre2.html">Chapitre 2</a></li>
             <li><a href="chapitres\chapitre3.html">Chapitre 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          Mythologie ▾
+          <ul class="dropdown-menu">
+            <li><a href="mythologie/L'épée de feu.html">L'épée de feu</a></li>
+            <li><a href="mythologie/Bourre-pif.html">Bourre-Pif</a></li>
           </ul>
         </li>
         <li class="dropdown">

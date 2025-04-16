@@ -293,3 +293,19 @@ nav .nav-links.active {
     margin-left: 0;
   }
 }
+
+.logo-cover {
+  max-height: 60px; /* ou 80px si tu veux plus grand */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Ajustement pour petits écrans */
+@media (max-width: 768px) {
+  .logo-cover {
+    max-height: 40px;
+  }
+}
