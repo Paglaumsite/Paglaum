@@ -182,7 +182,7 @@ nav .nav-links {
 main {
   flex: 1;
   max-width: 1800px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: 1rem;
   overflow-y: auto;
 }
